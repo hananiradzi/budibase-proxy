@@ -14,11 +14,11 @@ trusted_proxies static private_ranges # trust railway's proxy
 
 # site block, listens on the $PORT environment variable, automatically assigned by railway
 
-:80 { # access logs
+:3000 { # access logs
 log {
 format json # set access log format to json mode
 }
 
-    reverse_proxy create-react-app-site-production-254f.up.railway.app
+    reverse_proxy {$FRONTEND_HOST}
 
 }

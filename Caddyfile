@@ -1,2 +1,3 @@
-caddy-proxy-production-1157.up.railway.app
-reverse_proxy purelotus.budibase.app
+codewithnani.com {
+reverse_proxy localhost:3000
+}
